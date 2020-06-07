@@ -1,0 +1,792 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: corbel;
+    margin-top: 4px;
+}
+
+#logo {
+    position: absolute;
+    display: block;
+    background: url(../img/FairyF-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 130px;
+    text-indent: -666em;
+    overflow: hidden;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+    padding-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: rgb(183, 103, 129);
+    text-decoration: underline;
+}
+
+.barra3 {
+    display: none;
+    cursor: pointer;
+}
+
+.barra3 div {
+    width: 35px;
+    height: 4px;
+    background-color: rgb(183, 103, 129);
+    margin: 5px;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 13;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .barra3 {
+        display: block;
+
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+footer {
+    background-color: #333333;
+    padding: 30px 0px;
+}
+
+#tarjetas img {
+    width: 50px;
+    height: 30px;
+}
+
+#redes img {
+    width: 50px;
+    height: 50px;
+    padding-left: 5px;
+}
+
+footer p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#contenido1 {
+    position: relative;
+    width: auto;
+    height: 100%;
+    background-image: url(../img/181127105254-08-50-sweets-travel-donuts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contenido1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(183, 103, 129, 0.8);
+}
+
+#contenido1 img {
+    width: 85%;
+    height: 85%;
+    padding: 40px 0px;
+}
+
+#contenido1 h1 {
+    font-family: Garamond;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-top: 150px;
+}
+
+#contenido1 h2 {
+
+    font-family: corbel;
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+}
+
+#contenido1 h3 {
+
+    font-family: "corbel";
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.boton-rojo {
+    display: inline-block;
+    margin-bottom: 100px;
+    text-decoration: none;
+    font-family: "corbel";
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: ease 0.5s;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+    padding: 10px 30px;
+}
+
+.boton-rojo:hover {
+    background-color: rgb(183, 103, 129);
+    color: white;
+    text-decoration: none;
+}
+
+.lineaimg {
+    display: flex;
+}
+
+.lineaimg {
+    overflow: hidden;
+}
+
+.lineaimg .foto {
+    width: 25%;
+    float: left;
+}
+
+.lineaimg .foto img {
+    vertical-align: top;
+    width: 230px;
+    height: 200px;
+    opacity: .7;
+}
+
+.lineaimg .foto img:hover {
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+@media screen and (max-width: 800px) {
+    .lineaimg .foto {
+        width: 50%;
+    }
+}
+
+#voz h1 {
+    font-family: Garamond;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(183, 103, 129);
+    margin: 30px 0px;
+}
+
+.cuadrofondo {
+    background-color: white;
+    border-color: rgb(183, 103, 129);
+    border-style: dashed;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-width: 3px;
+}
+
+.card-header {
+    margin: 15px 0px;
+    font-size: 24px;
+    font-family: "corbel";
+    font-weight: normal;
+    color: black;
+    text-align: center;
+}
+
+#voz h5 {
+    font-size: 12px;
+    font-family: Arial;
+    color: teal;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+#unicos h1 {
+    font-family: Garamond;
+    font-weight: bold;
+    font-size: 40px;
+    color: #B86782;
+    padding-bottom: 30px;
+}
+
+#unicos p {
+    font-family: "corbel";
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+}
+
+#unicos img {
+    width: 400px;
+    height: 300px;
+    padding-bottom: 50px;
+    display: inline-block;
+}
+
+#nosotros {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/Fotograma-de-Jordi-Roca-en-Chefs-Table-de-Netflix-BBVA-1024x423.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#QFairy h1 {
+    padding: 30px 0px;
+    font-family: "Garamond";
+    font-size: 40px;
+    font-weight: bold;
+    color: #B86782;
+}
+
+#QFairy p {
+    font-family: "corbel";
+    font-size: 20px;
+    color: black;
+
+}
+
+#QFairy img {
+    margin-top: 60px;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 100px;
+}
+
+#historia {
+    background-color: #FCD4C3;
+}
+
+#historia h1 {
+    padding: 30px 0px;
+    font-family: "Garamond";
+    font-size: 40px;
+    font-weight: bold;
+    color: #B86782;
+}
+
+#historia p {
+    font-family: "corbel";
+    font-size: 20px;
+    color: black;
+}
+
+#historia img {
+    margin-top: 60px;
+    width: 350px;
+    height: 200px;
+}
+
+.inter {
+    margin-bottom: 100px;
+}
+
+#Afiliados h1 {
+    padding: 30px 0px;
+    font-family: "Garamond";
+    font-size: 40px;
+    font-weight: bold;
+    color: #B86782;
+}
+
+#Afiliados p {
+    font-family: "corbel";
+    font-size: 20px;
+    color: black;
+}
+
+#Afiliados img {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    width: 400px;
+    height: 250px;
+}
+
+#Plan {
+    background-color: #FCD4C3;
+}
+
+#Plan h1 {
+    font-family: "Garamond";
+    font-weight: bold;
+    color: #B86782;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#Plan h2 {
+    font-family: "arial";
+    font-weight: normal;
+    color: #B86782;
+    padding-top: 30px;
+}
+
+#Plan h3 {
+    font-family: "arial";
+    font-weight: normal;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#Plan p {
+    font-family: "corbel";
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    text-align: right justify;
+    padding: 0px 0px;
+    height: 150px;
+    width: 250px;
+}
+
+#Plan img {
+    height: 200px;
+    width: 150px;
+}
+
+.boton-rojo2 {
+    display: inline-block;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-family: "corbel";
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: ease 0.5s;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+}
+
+.boton-rojo2:hover {
+    background-color: rgb(183, 103, 129);
+    color: white;
+    text-decoration: none;
+}
+
+#anterior h1 {
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(183, 103, 129);
+    text-align: center;
+    padding: 50px 0px;
+}
+
+#anterior img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.fondorosaclaro {
+    background-color: #FCD4C3;
+}
+
+#galeria h1 {
+    font-family: "Garamond";
+    font-size: 40px;
+    font-weight: bold;
+    color: #B86782;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#galeria img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+
+#galeria h2 {
+    font-family: "Garamond";
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 30px 0px;
+}
+
+#center {
+    text-align: center;
+}
+
+.wrapper {
+    font-family: "corbel";
+    top: 50%;
+    display: block;
+    width: 250px;
+}
+
+.content {
+    position: relative;
+    top: 45%;
+    color: white;
+    font-size: 18px;
+    font-family: "corbel";
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: .5 ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper:hover .overlay {
+    opacity: 1;
+
+}
+
+.form-control {
+    width: 300px;
+}
+
+#exampleInputEmail1 {
+    display: inline;
+}
+
+#exampleInputPassword1 {
+    display: inline;
+}
+
+#login h1 {
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(183, 103, 129);
+    margin: 60px 0px;
+}
+
+.btn-primary {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(183, 103, 129);
+    border-color: transparent;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #B86782;
+    border-color: transparent;
+    text-decoration: underline;
+
+}
+
+#faq {
+    background-color: rgb(252, 213, 196);
+    overflow: auto;
+    position: relative;
+    min-height: 150px;
+    max-width: 800px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+#faqs h1 {
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(183, 103, 129);
+    margin: 40px 0px;
+}
+
+#faq h3 {
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(183, 103, 129);
+
+}
+
+#faq p {
+    font-family: "corbel";
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+}
+
+#faqs h2 {
+    font-family: "corbel";
+    font-weight: normal;
+    font-size: 28px;
+    color: black;
+
+}
+
+#registro h1 {
+
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(183, 103, 129);
+    margin-top: 50px;
+}
+
+#registro h2 {
+
+    font-family: "corbel";
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    margin: 50px 0px;
+}
+
+#registro h3 {
+
+    font-family: "Garamond";
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    margin-top: 30px;
+}
+
+
+#registro form {
+    margin-bottom: 100px;
+}
+
+#paquete {
+    padding-top: 50px;
+}
+
+#paquete h2 {
+    font-family: "corbel";
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+
+}
+
+#paquete p {
+    font-family: "corbel";
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+}
+
+#paquete img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+
+}
+
+#registro label {
+    padding-top: 5px;
+    font-family: "corbel";
+    font-weight: bolder;
+    font-size: 16px;
+    color: black;
+}
+
+.boton-rosa {
+    display: inline-block;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-family: "corbel";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(183, 103, 129);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: ease 0.5s;
+    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+}
+
+.boton-rosa:hover {
+    background-color: white;
+    color: #B86782;
+    text-decoration: underline;
+
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 15;
+}
+
+#dialogo {
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    z-index: 16;
+    padding: 40px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+}
+
+#dialogo h1 {
+    position: relative;
+    display: block;
+    font-family: "Garamond";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(183, 103, 129);
+    margin: 15px 0px;
+}
+
+#dialogo p {
+    position: relative;
+    display: block;
+    font-family: "corbel";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+#dialogo a {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    background: url(../img/close.svg) no-repeat center;
+    background-size: 20px 20px;
+    text-indent: -900px;
+    overflow: hidden;
+}
+
+.icart {
+    position: relative;
+}
+
+.summary {
+    position: absolute;
+    font-size: 12px;
+    margin: -8px;
+}
+
+#envio h1{
+    padding: 30px 0px;
+    font-size: 50px;
+    font-family: Garamond;
+    color: #B86782;
+    font-weight: bold;
+}
+#envio img{
+    width: 200px;
+    height: 100px;
+}
+#envio p{
+    padding: 30px 0px;
+    font-family: "corbel";
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+}

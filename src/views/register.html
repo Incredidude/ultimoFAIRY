@@ -1,0 +1,115 @@
+<%- include('partials/header') -%>
+<%- include('partials/nav') -%>
+<div id="login" class="fondorosaclaro">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 id="center">Registro</h1>
+        <form action="/add" method="post">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer01">Nombre</label>
+                <input type="text" class="form-control is-invalid" id="validationServer01" placeholder="First name"
+                  name="nombre" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer02">Apellidos</label>
+                <input type="text" class="form-control is-invalid" id="validationServer02" placeholder="Last name"
+                  name="apellidos" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServerUsername">Nombre de usuario</label>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username"
+                  name="usuario" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer07">Calle</label>
+                <input type="text" class="form-control is-invalid" id="validationServer07" placeholder="Address"
+                  name="calle" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer07">Número de casa</label>
+                <input type="text" class="form-control is-invalid" id="validationServer07" placeholder="HomeNumber"
+                  name="numeroCasa" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer08">Número de teléfono</label>
+                <input type="text" class="form-control is-invalid" id="validationServer08" placeholder="Phone Number"
+                  name="numeroTelefonico" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer05">Código Postal</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip"
+                  name="codigoPostal" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer03">Ciudad</label>
+                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City"
+                  name="ciudad" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer04">Estado</label>
+                <select id="validationServer04" class="form-control is-invalid" placeholder="State" name="estado"
+                  required>
+                  <option selected>Choose...</option>
+                  <option>Baja California</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer06">País</label>
+                <select id="validationServer06" class="form-control is-invalid" placeholder="Country" name="pais"
+                  required>
+                  <option selected>Choose...</option>
+                  <option>México</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer10">Correo Electrónico</label>
+                <input type="text" class="form-control is-invalid" id="validationServer10" placeholder="Email"
+                  name="correoElectronico" required>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="validationServer11">Contraseña</label>
+                <input type="password" class="form-control is-invalid" id="validationServer11" placeholder="Password"
+                  name="contraseña" required>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+              <label class="form-check-label" for="invalidCheck3">
+                He leído los terminos y condiciones.
+              </label>
+            </div>
+            <div id="center" class="col-lg-12 col-md-12 col-sm-12">
+              <button type="submit" class="boton-rosa" href="checkout.html">SUSCRÍBETE</button>
+            </div>
+          </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') -%>

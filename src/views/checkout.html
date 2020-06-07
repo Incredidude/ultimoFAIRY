@@ -1,0 +1,94 @@
+<%- include('partials/header') -%>
+<%- include('partials/nav') -%>
+<div id="registro" class="fondorosaclaro">
+  <div class="container">
+    <div class="row">
+      <div id="center" class="col-lg-12">
+        <h1 id="center">Checkout</h1>
+      </div>
+
+     <!-- 
+      <div class="col-lg-12" id="center">
+        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Resumen de la compra </div>
+        <div class="p-4">
+          <p class="font-italic mb-4">El envio y gastos adicionales están dentro del total de la orden</p>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Subtotal </strong>
+              <strong> 600 </strong>
+            </li>
+            <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                class="text-muted">Envio</strong><strong>$10.00</strong></li>
+            <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                class="text-muted">Impuesto</strong><strong>$5.00</strong></li>
+            <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+              <h5 class="font-weight-bold">$600 </h5>
+            </li>
+          </ul>
+        </div>
+-->
+<div class="col-lg-12">
+  <h3>Casi listo.</h3>
+  <h2>Seleccione su suscripción FAIRY que desea comprar.</h2>
+</div>
+<!--
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top" id="center">
+          <input type="hidden" name="cmd" value="_xclick-subscriptions">
+          <input type="hidden" name="business" value="sb-t47zyf1947695@business.example.com">
+          <input type="hidden" name="lc" value="MX">
+          <input type="hidden" name="item_name" value="Plan FAIRY">
+          <input type="hidden" name="no_note" value="1">
+          <input type="hidden" name="src" value="1">
+          <input type="hidden" name="a3" value="600.00">
+          <input type="hidden" name="p3" value="1">
+          <input type="hidden" name="t3" value="M">
+          <input type="hidden" name="currency_code" value="MXN">
+          <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHostedGuest">
+          <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_subscribeCC_LG.gif" border="0"
+            name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+          <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+        </form>
+-->
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_xclick-subscriptions">
+  <input type="hidden" name="business" value="sb-t47zyf1947695@business.example.com">
+  <input type="hidden" name="lc" value="MX">
+  <input type="hidden" name="item_name" value="Fairy Paquete">
+  <input type="hidden" name="no_note" value="1">
+  <input type="hidden" name="src" value="1">
+  <input type="hidden" name="currency_code" value="MXN">
+  <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHostedGuest">
+  <table>
+  <tr><td><input type="hidden" name="on0" value="Selecciona tu Paquete">Selecciona tu Paquete</td></tr><tr><td><select name="os0">
+    <option value="Plan 1_1 Mes">Plan 1 Mes : $620.00 pesos - mensuales</option>
+    <option value="Plan 2_3 Mes">Plan 3 Meses : $1,740.00 pesos - mensuales</option>
+    <option value="Plan31_6 Meses">Plan 6 Meses : $3,240.00 pesos - mensuales</option>
+    <option value="Plan 4_ 1año">Plan 1año : $6,000.00 pesos - anual</option>
+  </select> </td></tr>
+  </table>
+  <input type="hidden" name="option_select0" value="Plan 1_1 Mes">
+  <input type="hidden" name="option_amount0" value="620.00">
+  <input type="hidden" name="option_period0" value="M">
+  <input type="hidden" name="option_frequency0" value="1">
+  <input type="hidden" name="option_select1" value="Plan 2_3 Mes">
+  <input type="hidden" name="option_amount1" value="1740.00">
+  <input type="hidden" name="option_period1" value="M">
+  <input type="hidden" name="option_frequency1" value="1">
+  <input type="hidden" name="option_select2" value="Plan31_6 Meses">
+  <input type="hidden" name="option_amount2" value="3240.00">
+  <input type="hidden" name="option_period2" value="M">
+  <input type="hidden" name="option_frequency2" value="1">
+  <input type="hidden" name="option_select3" value="Plan 4_ 1año">
+  <input type="hidden" name="option_amount3" value="6000.00">
+  <input type="hidden" name="option_period3" value="Y">
+  <input type="hidden" name="option_frequency3" value="1">
+  <input type="hidden" name="option_index" value="0">
+  <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+  <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+  </form>
+  <br>
+  <br>
+  <br>
+      </div>
+    </div>
+  </div>
+<%- include('partials/footer') -%>
